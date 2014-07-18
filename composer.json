@@ -1,0 +1,21 @@
+{
+    "name": "flug/system",
+    "description": "The System namespace contains fundamental classes and base classes that define commonly-used value and reference data types, events and event handlers, interfaces, attributes, and processing exceptions.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flug",
+            "email": "flugv1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload":{
+        "psr-4":{
+            "System\\" : ["src/"]
+        }
+    }
+
+}
