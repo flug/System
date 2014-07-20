@@ -3,8 +3,6 @@
 namespace System;
 
 
-use System\Integer;
-
 class String extends \ArrayObject
 {
 
