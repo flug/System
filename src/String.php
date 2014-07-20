@@ -86,14 +86,14 @@ class String extends \ArrayObject
     }
 
     /**
-     * @return bool
+     * @return Boolean
      */
     public function IsNullOrEmpty()
     {
         if ($this->var != null || $this->var != '') {
-            return false;
+            return new Boolean(false);
         }
-        return true;
+        return new Boolean(true);
 
     }
 

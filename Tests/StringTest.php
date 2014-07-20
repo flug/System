@@ -20,7 +20,7 @@ class StringTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($string->Compare(new String($stringValue))->__toValue());
         $this->assertFalse($string->Compare(new String($stringCompare))->__toValue());
         $this->assertSame($stringValue.$stringConcact, $string->Concat(new String($stringConcact))->__toString());
-        $this->assertFalse($string->IsNullOrEmpty());
+        $this->assertFalse($string->IsNullOrEmpty()->__toValue());
         $this->assertSame($stringReplace, $string->Replace(new String($stringValue.$stringConcact), new String("Test Success") , null)->__toString());
 
 	}
