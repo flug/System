@@ -8,7 +8,7 @@ class String extends \ArrayObject
 
     private $var;
 
-    public function __construct($var)
+    public function __construct($var = null)
     {
         $this->var = $var;
     }
