@@ -54,14 +54,14 @@ class String extends \ArrayObject
 
     /**
      * @param String $compareString
-     * @return bool
+     * @return Boolean
      */
     public function Compare(String $compareString)
     {
         if ($this->var == $compareString->__toString()) {
-            return true;
+            return new Boolean(true);
         }
-        return false;
+        return new Boolean(false);
     }
 
     /**

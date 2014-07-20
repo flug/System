@@ -17,8 +17,8 @@ class StringTest extends \PHPUnit_Framework_TestCase
 		$string = new String($stringValue);
 
 		$this->assertSame($stringValue, $string->__toString());
-        $this->assertTrue($string->Compare(new String($stringValue)));
-        $this->assertFalse($string->Compare(new String($stringCompare)));
+        $this->assertTrue($string->Compare(new String($stringValue))->__toValue());
+        $this->assertFalse($string->Compare(new String($stringCompare))->__toValue());
         $this->assertSame($stringValue.$stringConcact, $string->Concat(new String($stringConcact))->__toString());
         $this->assertFalse($string->IsNullOrEmpty());
         $this->assertSame($stringReplace, $string->Replace(new String($stringValue.$stringConcact), new String("Test Success") , null)->__toString());
