@@ -24,7 +24,13 @@ class String extends \ArrayObject
     }
 
 
-
+    /**
+     * @param String $search
+     * @param String $replace
+     * @param Integer $count
+     * @param Boolean $insensibleCase
+     * @return $this
+     */
     public function Replace(String $search, String $replace, Integer $count = null, Boolean $insensibleCase = null)
     {
         if ($count == null)
