@@ -142,4 +142,9 @@ class String extends \ArrayObject
         return static::Instance($this->var);
     }
 
+    public function __invoke($var)
+    {
+        $this->var = $var;
+        return $this;
+    }
 }
