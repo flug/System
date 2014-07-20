@@ -64,7 +64,7 @@ class String extends \ArrayObject
 
     /**
      * @param String $stringContact
-     * @return string
+     * @return $this
      */
     public function Concat(String $stringContact)
     {
