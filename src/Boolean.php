@@ -10,7 +10,7 @@ class Boolean
 
     public function __construct($bool)
     {
-        if (is_bool($bool)) {
+        if ($bool === true || $bool === false) {
             $this->bool = $bool;
         } else {
             throw new \LogicException(sprintf("You variable %s is not a bool", $bool));
