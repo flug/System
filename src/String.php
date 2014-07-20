@@ -129,9 +129,9 @@ class String extends \ArrayObject
      * @param $var
      * @return static
      */
-    public static  function Instance($var)
+    public static function Instance($var)
     {
-            return new static($var);
+        return new static($var);
     }
 
     /**
