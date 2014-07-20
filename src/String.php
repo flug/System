@@ -73,7 +73,7 @@ class String extends \ArrayObject
         return $this;
     }
 
-    public function Contains($string)
+    public function Contains(String $string)
     {
         //TODO implement this method
     }
