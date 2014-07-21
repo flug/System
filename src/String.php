@@ -10,6 +10,11 @@ class String extends \ArrayObject implements  ObjectInterface
 
     private $var;
 
+    const LTR = 0;
+
+    const RTL = 1;
+
+
     public function __construct($var = null)
     {
         $this->var = $var;
