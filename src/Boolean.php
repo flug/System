@@ -13,7 +13,7 @@ class Boolean
         if ($bool === true || $bool === false) {
             $this->bool = $bool;
         } else {
-            throw new \LogicException(sprintf("You variable %s is not a bool", $bool));
+            throw new \LogicException(sprintf("Your variable %s is not a bool", $bool));
         }
 
     }
