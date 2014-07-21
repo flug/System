@@ -3,7 +3,9 @@
 namespace System;
 
 
-class String extends \ArrayObject
+use System\Builder\Interfaces\ObjectInterface;
+
+class String extends \ArrayObject implements  ObjectInterface
 {
 
     private $var;
