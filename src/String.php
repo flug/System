@@ -132,6 +132,10 @@ class String extends \ArrayObject implements  ObjectInterface
         // TODO implement this method
     }
 
+    public function Pad()
+    {
+        //TODO implement this method
+    }
     /**
      * @param $var
      * @return static
