@@ -1,6 +1,8 @@
 <?php
 
-namespace System;
+namespace System\Math;
+
+use System\Builder\Object;
 
 class Integer extends Object
 {

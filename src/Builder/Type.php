@@ -1,9 +1,8 @@
 <?php
 
-namespace System;
+namespace System\Builder;
 
-
-class Type
+class Type extends \ArrayObject
 {
     private static function GetTypeLsb()
     {
@@ -13,6 +12,7 @@ class Type
     public function GetType()
     {
         $namespace = static::GetTypeLsb();
-        return $namespace;
+
+        return ltrim(strrchr($namespace, '\\'), '\\');
     }
 }

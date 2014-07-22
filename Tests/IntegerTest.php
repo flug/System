@@ -2,7 +2,7 @@
 
 namespace System\Test;
 
-use System\Integer;
+use System\Math\Integer;
 
 class IntegerTest extends \PHPUnit_Framework_TestCase
 {
