@@ -2,7 +2,7 @@
 
 namespace System;
 
-class Integer
+class Integer extends Object
 {
     CONST LESSTHAN = -1;
     CONST EQUAL = 0;
