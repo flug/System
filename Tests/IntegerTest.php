@@ -39,5 +39,25 @@ class IntegerTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(Integer::LESSTHAN, $mainValue->CompareTo($positiveValue));
         $this->assertEquals(Integer::LESSTHAN, $mainValue->CompareTo($positiveValueObject));
     }
+
+    public function testCompareIntegerEqualsInteger()
+    {
+        $mainValue = new Integer(16325);
+        $sameValue = 16325;
+        $sameValueObject = new Integer(16325);
+
+        $this->assertTrue($mainValue->Equals($sameValue));
+        $this->assertTrue($mainValue->Equals($sameValueObject));
+    }
+
+    public function testCompareIntegerNotEqualsInteger()
+    {
+        $mainValue = new Integer(16325);
+        $sameValue = 0;
+        $sameValueObject = new Integer(0);
+
+        $this->assertNotTrue($mainValue->Equals($sameValue));
+        $this->assertNotTrue($mainValue->Equals($sameValueObject));
+    }
 }
  

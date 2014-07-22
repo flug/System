@@ -49,4 +49,18 @@ class Integer
             throw new \InvalidArgumentException('Arg_MustBeInt');
         }
     }
+
+    public function Equals($obj)
+    {
+        if (is_int($obj)) {
+            return $this->integer === $obj;
+        } else {
+            /** @var \System\Integer $obj */
+            if (__NAMESPACE__ . '\\Integer' !== get_class($obj)) {
+                return false;
+            }
+
+            return $this->integer === $obj->integer;
+        }
+    }
 }
