@@ -4,6 +4,10 @@ namespace System;
 
 class Integer
 {
+    CONST LESSTHAN = -1;
+    CONST EQUAL = 0;
+    CONST GREATERTHAN = 1;
+
     private $integer;
 
     public function __construct($integer)
